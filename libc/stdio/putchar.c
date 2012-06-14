@@ -1,7 +1,5 @@
 #include <dcpu.h>
-
-#define SCREEN_WIDTH  32
-#define SCREEN_HEIGHT 12
+#include <stdio.h>
 
 static unsigned display[SCREEN_WIDTH * SCREEN_HEIGHT];
 

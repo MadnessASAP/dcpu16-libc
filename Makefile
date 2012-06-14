@@ -11,7 +11,8 @@ C_SRCS = libc/stdlib/malloc.c \
 	libc/stdlib/realloc.c \
 	libc/string/string.c \
 	libc/dcpu.c \
-	libc/stdio/putchar.c
+	libc/stdio/putchar.c \
+	libc/stdio/puts.c
 
 S_PRODUCED = $(C_SRCS:.c=.s)
 
