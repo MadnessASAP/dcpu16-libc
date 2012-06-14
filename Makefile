@@ -12,7 +12,8 @@ C_SRCS = libc/stdlib/malloc.c \
 	libc/string/string.c \
 	libc/dcpu.c \
 	libc/stdio/putchar.c \
-	libc/stdio/puts.c
+	libc/stdio/puts.c \
+	libc/stdio/initConsole.c
 
 S_PRODUCED = $(C_SRCS:.c=.s)
 
