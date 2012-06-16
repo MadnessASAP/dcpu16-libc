@@ -10,4 +10,6 @@ int initConsole();
 
 int putchar( int );
 
-int puts( int* );
+int puts( const char* );
+
+int itoa( unsigned, unsigned, char* );

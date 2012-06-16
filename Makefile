@@ -1,4 +1,4 @@
-CFLAGS = -O -Wall -Iinclude -S -target dcpu16
+CFLAGS = -O -g -Wall -Iinclude -S -target dcpu16
 
 CC = clang
 AS = dcpu16-as
@@ -13,7 +13,8 @@ C_SRCS = libc/stdlib/malloc.c \
 	libc/dcpu.c \
 	libc/stdio/putchar.c \
 	libc/stdio/puts.c \
-	libc/stdio/initconsole.c
+	libc/stdio/initconsole.c \
+	libc/stdio/itoa.c
 
 S_PRODUCED = $(C_SRCS:.c=.s)
 
