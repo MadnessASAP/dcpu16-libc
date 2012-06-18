@@ -1,15 +1,16 @@
 #include <stdio.h>
 
 int itoa(unsigned n, unsigned base, char* str) {
-	unsigned i = 0;
+	int i = 0;
 	unsigned digits[16];
-	while (base < n) {
+	while (n >= base) {
 		digits[i++] = n % base;
 		n /= base;
 	}
-	
+	digits[i++] = n;
+
 	while ( i-- > 0 ) {
-		*str = '0' + digits[i];
+		*str = (digits[i] < 10) ? ( '0' + digits[i] ) : ( 'A' + digits[i] - 10 );
 		str++;
 	}
 	*str = 0;
