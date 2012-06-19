@@ -12,4 +12,5 @@ int putchar( int );
 
 int puts( const char* );
 
-int itoa( unsigned, unsigned, char* );
+int utoa( unsigned, unsigned, char* );
+int itoa( int, unsigned, char* );
